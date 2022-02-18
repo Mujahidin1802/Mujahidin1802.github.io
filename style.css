@@ -74,7 +74,7 @@ a {
 
 header .background {
   background-image: url(img/workroom.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   /* background-position: 0 -200px; */
   background-repeat: no-repeat;
   height: 90vh;
@@ -387,7 +387,7 @@ aside {
 }
 .box-center-bottom {
   background-image: url(img/awwards.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   border: 2px solid white;
