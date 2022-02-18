@@ -1,0 +1,558 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1b1c3b;
+}
+.container {
+  overflow: hidden;
+}
+nav {
+  top: 0;
+  background-color: rgb(1, 11, 37);
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  font-family: "Shippori Antique", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-branding {
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.nav-link {
+  padding: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/* ///////////////////////////////////////////////////////// */
+
+header .background {
+  background-image: url(img/workroom.jpg);
+  background-size: cover;
+  /* background-position: 0 -200px; */
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  background-attachment: fixed;
+}
+header .text-hero {
+  margin: 0 26% 15%;
+  margin-top: 60px;
+  font-size: 70px;
+  color: white;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+}
+header .contact {
+  text-decoration: none;
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  margin: 0 42%;
+  padding: 10px;
+  align-items: center;
+}
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.644);
+  color: black;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Profile */
+main .profile {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-title {
+  margin-top: 90px;
+  color: white;
+  margin-bottom: -35px;
+  font-family: "Shippori Antique", sans-serif;
+}
+.ikon {
+  margin-top: 10px;
+  cursor: pointer;
+}
+main .profile-image {
+  background-image: url(img/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  margin-right: 40px;
+  background-color: #1b1c3b;
+  width: 450px;
+  height: 500px;
+  border: 2px solid white;
+}
+main .profile-image .marquee {
+  margin-top: 449px;
+  background-color: rgba(0, 0, 0, 0.664);
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+}
+main .profile-quote {
+  margin-top: 50px;
+  margin-left: 40px;
+  background-color: #1b1c3b;
+  width: 450px;
+  padding: 50px;
+  padding-top: 15px;
+  color: white;
+  line-height: 45px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  font-family: "Roboto", sans-serif;
+}
+/* ////////////////////////////////////////////// */
+/* BOX */
+main .card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 20px;
+  width: 1000px;
+  box-sizing: border-box;
+}
+.wrap-name {
+  margin-left: 30px;
+}
+
+main .card .wrap-profile {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+/* BOX */
+/* ///////////////////////////////////////////////// */
+
+/* Experience */
+.experience-title {
+  margin-top: 90px;
+  margin-left: 1;
+  margin-top: 80px;
+  color: white;
+  font-family: "Shippori Antique", sans-serif;
+}
+main .card .wrap-profile .profile-img-PMR {
+  margin-left: 70px;
+  height: 73px;
+  width: 63px;
+  background-image: url(img/logopmr.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-Pramuka {
+  margin-left: 70px;
+  height: 70px;
+  width: 70px;
+  background-image: url(img/pramuka.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-OSMAN {
+  margin-left: 60px;
+  height: 80px;
+  width: 80px;
+  background-image: url(img/osman.jpg);
+  background-size: cover;
+  border-radius: 50px;
+}
+main .card .wrap-profile .profile-img-TP {
+  margin-left: 70px;
+  height: 80px;
+  width: 70px;
+
+  background-image: url(img/thifan.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-TS {
+  margin-left: 60px;
+  height: 70px;
+  width: 80px;
+  background-image: url(img/logots.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-LKSA {
+  margin-left: 70px;
+  height: 60px;
+  width: 60px;
+  background-image: url(img/lksa.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-listrik {
+  margin-left: 70px;
+  height: 65px;
+  width: 65px;
+  background-image: url(img/listrik.png);
+  background-size: cover;
+}
+/* ////////////////////////////////// */
+
+/* Education */
+.education-title {
+  margin-top: 90px;
+  margin-left: 1;
+  margin-top: 80px;
+  color: white;
+  font-family: "Shippori Antique", sans-serif;
+}
+main .card .wrap-profile .profile-img-TK {
+  margin-left: 70px;
+  height: 60px;
+  width: 60px;
+  background-image: url(img/tk.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-SD {
+  margin-left: 70px;
+  height: 66px;
+  width: 56px;
+  background-image: url(img/logoSD.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-SMP {
+  margin-left: 70px;
+  height: 73px;
+  width: 63px;
+  background-image: url(img/logosmp.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-PPTQ {
+  margin-left: 70px;
+  height: 63px;
+  width: 63px;
+  background-image: url(img/logopondok.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-PIT {
+  margin-left: 48px;
+  height: 35px;
+  width: 85px;
+  background-image: url(img/pondok-it.png);
+  background-size: cover;
+}
+main .card .wrap-profile .profile-img-PPRO {
+  margin-left: 70px;
+  height: 60px;
+  width: 60px;
+  background-image: url(img/Programmer.png);
+  background-size: cover;
+}
+/* //////////////////////////////////////////////////////// */
+
+/* Portfolio */
+aside {
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-title {
+  margin-top: 80px;
+  color: white;
+  margin-left: 450px;
+  font-family: "Shippori Antique", sans-serif;
+  border-bottom: 2px solid white;
+  width: 1000px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1px;
+}
+/* Hover */
+.image-hoverlay {
+  position: relative;
+  width: 550px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: "quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+.image-hoverlay:hover {
+  opacity: 1;
+}
+.image-hoverlay h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+/*  */
+.box-left-top {
+  background-image: url(img/pendaftaran.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.box-center-top {
+  background-image: url(img/moojacafe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.box-right-top {
+  background-image: url(img/gedebook.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.box-left-bottom {
+  background-image: url(img/myweb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.box-center-bottom {
+  background-image: url(img/awwards.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.box-right-bottom {
+  background-image: url(img/unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid white;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+/* /////////////////////////////////// */
+/* Footer */
+
+footer {
+  margin-top: 70px;
+  margin-left: 820px;
+  color: white;
+  margin-bottom: 55px;
+}
+/*  */
+/* for Tablet */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header .text-hero {
+    margin: 0 34% 15%;
+  }
+  header .contact {
+    margin: 0 21% 15%;
+  }
+  main .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .card {
+    width: 650px;
+    box-sizing: border-box;
+  }
+  aside .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+  }
+  aside .portfolio-title {
+    margin-left: 65px;
+    justify-content: center;
+    width: 630px;
+  }
+  footer {
+    display: flex;
+    margin-left: 260px;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(1, 11, 37);
+    width: 100%;
+    text-align: center;
+    transition: 0.6s;
+  }
+  nav {
+    width: 100%;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  header {
+    width: 100%;
+  }
+  header .text-hero {
+    margin: 12% 27% 15%;
+  }
+  header .contact {
+    margin: 20% 24% 15%;
+  }
+
+  main .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .card {
+    width: 550px;
+    box-sizing: border-box;
+  }
+  main .card .wrap-profile {
+    display: flex;
+    margin-left: -30px;
+    padding: 4px;
+  }
+  aside {
+    width: 100%;
+  }
+  aside .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  aside .portfolio-title {
+    margin-left: 25px;
+    justify-content: center;
+    width: 530px;
+  }
+  .box-left-top,
+  .box-center-top,
+  .box-right-top,
+  .box-left-bottom,
+  .box-center-bottom,
+  .box-right-bottom {
+    width: 530px;
+    height: 280px;
+    margin-left: -36px;
+  }
+  footer {
+    display: flex;
+    margin-left: 175px;
+  }
+}
