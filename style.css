@@ -75,6 +75,10 @@ a {
 header .background {
   background-image: url(img/workroom.jpg);
   background-size: 100% 100%;
+<<<<<<< HEAD
+=======
+  /* background-position: 0 -200px; */
+>>>>>>> 57162088bc175bbcdd64e484fb3a8666706307f6
   background-repeat: no-repeat;
   height: 90vh;
   width: 100%;
