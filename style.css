@@ -74,8 +74,7 @@ a {
 
 header .background {
   background-image: url(img/workroom.jpg);
-  background-size: cover;
-  /* background-position: 0 -200px; */
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 90vh;
   width: 100%;
@@ -104,6 +103,7 @@ header .contact {
 header a:hover {
   background-color: rgba(255, 255, 255, 0.644);
   color: black;
+  transition: 0.4s ease;
 }
 /* ////////////////////////////////////////////////////////////////////////// */
 main {
@@ -215,7 +215,6 @@ main .card .wrap-profile .profile-img-TP {
   margin-left: 70px;
   height: 80px;
   width: 70px;
-
   background-image: url(img/thifan.png);
   background-size: cover;
 }
@@ -295,10 +294,6 @@ main .card .wrap-profile .profile-img-PPRO {
 /* //////////////////////////////////////////////////////// */
 
 /* Portfolio */
-aside {
-  justify-content: center;
-  align-items: center;
-}
 .portfolio-title {
   margin-top: 80px;
   color: white;
@@ -387,7 +382,7 @@ aside {
 }
 .box-center-bottom {
   background-image: url(img/awwards.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   border: 2px solid white;
@@ -414,7 +409,8 @@ aside {
 
 footer {
   margin-top: 70px;
-  margin-left: 820px;
+  justify-content: center;
+  /* margin-left: 820px; */
   color: white;
   margin-bottom: 55px;
 }
@@ -445,20 +441,27 @@ footer {
     width: 650px;
     box-sizing: border-box;
   }
-  aside .portfolio {
+  main .portfolio {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 60px;
+    margin-left: 5px;
   }
-  aside .portfolio-title {
-    margin-left: 65px;
-    justify-content: center;
-    width: 630px;
+  main .portfolio-title {
+    margin-left: 28px;
+    width: 430px;
   }
+  .box-left-top,
+  .box-center-top,
+  .box-right-top,
+  .box-left-bottom,
+  .box-center-bottom,
+  .box-right-bottom {
+    width: 650px;
+  }
+
   footer {
     display: flex;
-    margin-left: 260px;
+    /* margin-left: 260px; */
   }
 }
 
@@ -528,16 +531,13 @@ footer {
     margin-left: -30px;
     padding: 4px;
   }
-  aside {
-    width: 100%;
-  }
-  aside .portfolio {
+  main .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  aside .portfolio-title {
-    margin-left: 25px;
+  main .portfolio-title {
+    /* margin-left: 10px; */
     justify-content: center;
     width: 530px;
   }
@@ -548,11 +548,136 @@ footer {
   .box-center-bottom,
   .box-right-bottom {
     width: 530px;
-    height: 280px;
-    margin-left: -36px;
   }
+
   footer {
     display: flex;
-    margin-left: 175px;
+  }
+}
+/* //////// */
+@media (max-width: 345px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+  }
+  header .text-hero {
+    margin: 12% 8% 15%;
+  }
+  header .contact {
+    margin: 20% 24% 15%;
+  }
+  .profile-title {
+    margin-left: 29px;
+  }
+  main .profile-image {
+    margin-left: 40px;
+    width: 315px;
+    height: 365px;
+  }
+  main .profile-image .marquee {
+    margin-top: 320px;
+    padding: 10px;
+    font-size: 13px;
+  }
+  main .profile-quote {
+    margin-left: 40px;
+    width: 310px;
+    padding: 10px;
+  }
+  main .card {
+    width: 340px;
+    box-sizing: border-box;
+  }
+  main .card .wrap-profile {
+    display: flex;
+    margin-left: -74px;
+  }
+  main .card .wrap-profile .profile-img-PMR {
+    margin-left: 67px;
+    height: 46px;
+    width: 38px;
+  }
+  main .card .wrap-profile .profile-img-Pramuka {
+    margin-left: 65px;
+    height: 40px;
+    width: 40px;
+  }
+  main .card .wrap-profile .profile-img-OSMAN {
+    margin-left: 59px;
+    height: 52px;
+    width: 80px;
+  }
+  main .card .wrap-profile .profile-img-TP {
+    margin-left: 58px;
+    height: 50px;
+    width: 40px;
+  }
+  main .card .wrap-profile .profile-img-TS {
+    margin-left: 54px;
+    height: 47px;
+    width: 57px;
+  }
+  main .card .wrap-profile .profile-img-LKSA {
+    margin-left: 68px;
+    height: 40px;
+    width: 40px;
+  }
+  main .card .wrap-profile .profile-img-listrik {
+    margin-left: 67px;
+    height: 43px;
+    width: 43px;
+  }
+  main .card .wrap-profile .profile-img-TK {
+    margin-left: 63px;
+    height: 45px;
+    width: 73px;
+  }
+  main .card .wrap-profile .profile-img-SD {
+    margin-left: 65px;
+    height: 42px;
+    width: 58px;
+  }
+  main .card .wrap-profile .profile-img-SMP {
+    margin-left: 61px;
+    height: 51px;
+    width: 61px;
+  }
+  main .card .wrap-profile .profile-img-PPTQ {
+    margin-left: 63px;
+    height: 47px;
+    width: 63px;
+  }
+  main .card .wrap-profile .profile-img-PIT {
+    margin-left: 67px;
+    height: 17px;
+    width: 42px;
+  }
+  main .card .wrap-profile .profile-img-PPRO {
+    margin-left: 66px;
+    height: 40px;
+    width: 40px;
+  }
+  main .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .portfolio-title {
+    justify-content: center;
+    width: 340px;
+    margin-left: 16px;
+  }
+  .box-left-top,
+  .box-center-top,
+  .box-right-top,
+  .box-left-bottom,
+  .box-center-bottom,
+  .box-right-bottom {
+    margin-left: 14px;
+    width: 335px;
   }
 }
