@@ -410,7 +410,6 @@ main .card .wrap-profile .profile-img-PPRO {
 footer {
   margin-top: 70px;
   justify-content: center;
-  /* margin-left: 820px; */
   color: white;
   margin-bottom: 55px;
 }
@@ -441,6 +440,7 @@ footer {
     width: 650px;
     box-sizing: border-box;
   }
+
   main .portfolio {
     display: flex;
     flex-direction: column;
@@ -461,7 +461,6 @@ footer {
 
   footer {
     display: flex;
-    /* margin-left: 260px; */
   }
 }
 
@@ -667,7 +666,6 @@ footer {
     justify-content: center;
   }
   main .portfolio-title {
-    justify-content: center;
     width: 340px;
     margin-left: 16px;
   }
